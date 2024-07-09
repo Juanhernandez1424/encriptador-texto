@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__logo">
+        <div class="img_logo">
+          <img src="/img/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="container__valores">
+        <div class="container__input-texto">
+          <textarea
+            class="txt_input"
+            id="txt_input"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+        </div>
+        <div class="container__btns-info">
+          <div class="info">
+            <ion-icon name="alert-circle"></ion-icon>
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="container__btns">
+            <div class="btns btn-encriptar">
+              <button type="submit" class="btn_encriptar" id="btn_encriptar">
+                Encriptar
+              </button>
+            </div>
+            <div class="btns btn-desencriptar">
+              <button
+                type="submit"
+                class="btn_desencriptar"
+                id="btn_desencriptar"
+              >
+                Desencriptar Texto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container__texto-encriptado">
+        <div class="text-encriptado">
+          <div class="info-encriptado-before" id="info-encriptado-before">
+            <div class="texto-encriptado-img">
+              <img src="/img/Muñeco.png" alt="Muñeco" />
+            </div>
+            <div class="text-encriptado-info">
+              <h3>Ningún mensaje fue encontrado</h3>
+              <p>Ingresa un texto que desees encriptar o desencriptar</p>
+            </div>
+          </div>
+          <div class="info-encriptado-after" id="info-encriptado-after">
+            <div class="texto-encriptado-after-txt">
+              <textarea
+                class="txt_input-encriptado"
+                id="txt_input-encriptado"
+                readonly
+              ></textarea>
+            </div>
+            <div class="texto-encriptado-after-copiar">
+              <button type="submit" class="btn-copiar" id="btn-copiar">
+                Copiar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-btn: rgb(10, 56, 113);
+    --color-gray: rgb(161, 161, 161);
+    --color-box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #D8DFE8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 2% 0 2%;
+}
+
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 2% 5% 2% 5%;
+}
+
+.img_logo img {
+    width: 120px;
+}
+
+.container__valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10% 0 5% 0;
+}
+
+.container__input-texto {
+    width: 100%;
+    height: 80%;
+}
+
+.txt_input {
+    color: var(--color-btn);
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    &::placeholder{
+        color: var(--color-btn);
+    }
+}
+
+.container__btns-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-gray);
+}
+
+.container__btns-info {
+    width: 100%;
+}
+
+.btns {
+    flex: 1;
+}
+
+.container__btns {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.btn_encriptar {
+    width: 100%;
+    height: 67px;
+    background-color: var(--color-btn);
+    color: #fff;
+}
+
+.btn_desencriptar {
+    width: 100%;
+    height: 67px;
+    border: 1px solid var(--color-btn);
+    color: var(--color-btn);
+    background-color: transparent;
+}
+
+.container__texto-encriptado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.text-encriptado {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    padding: 8%;
+    overflow: hidden;
+    box-shadow: 0px 15px 10px 0px var(--color-box-shadow);
+}
+
+.info-encriptado-before {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.texto-encriptado-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-encriptado-img img{
+    width: 100%;
+}
+
+.text-encriptado-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-encriptado-after {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.texto-encriptado-after-txt {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.txt_input-encriptado {
+    color: var(--color-gray);
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+
+.texto-encriptado-after-copiar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.btn-copiar {
+    width: 100%;
+    height: 67px;
+    border: 1px solid var(--color-btn);
+    color: var(--color-btn);
+    background-color: transparent;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+  
+    .container__valores {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+    }
+
+    .container__texto-encriptado{
+        width: 100%;
+    }
+
+    .texto-encriptado-img {
+        display: none;
+    }
+
+    .text-encriptado{
+        height: auto;
+        
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container__btns {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
